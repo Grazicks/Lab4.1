@@ -7,7 +7,7 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/Question"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Question"
@@ -18,7 +18,7 @@
         app:layout_constraintVertical_bias="0.324" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/TrueButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Правда"
@@ -30,7 +30,7 @@
         app:layout_constraintVertical_bias="0.464" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/FalseButton"
         android:layout_width="97dp"
         android:layout_height="50dp"
         android:text="Ложь"
@@ -42,7 +42,7 @@
         app:layout_constraintVertical_bias="0.464" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/Next"
         android:layout_width="119dp"
         android:layout_height="51dp"
         android:text="Дальше"
@@ -54,7 +54,7 @@
         app:layout_constraintVertical_bias="0.976" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/Before"
         android:layout_width="114dp"
         android:layout_height="51dp"
         android:text="Назад"
