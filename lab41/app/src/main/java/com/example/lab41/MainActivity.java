@@ -32,20 +32,17 @@ public class MainActivity extends AppCompatActivity {
         return quest_value;
     }
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+    protected void onCreate(Bundle onSavedInstanceState) {
+        super.onCreate(onSavedInstanceState);
         setContentView(R.layout.activity_main);
         TextView question = findViewById(R.id.Question);
         question.setGravity(Gravity.CENTER);
         trueButton = findViewById(R.id.TrueButton);
         falseButton = findViewById(R.id.FalseButton);
         nextButton = findViewById(R.id.Next);
-        beforeButton = findViewById(R.id.Before);
 
         View nextButton = findViewById(R.id.Next);
         nextButton.setEnabled(false);
-        View beforeButton = findViewById(R.id.Before);
-        beforeButton.setEnabled(false);
         question.setText(quest_value);
         trueButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -82,8 +79,6 @@ public class MainActivity extends AppCompatActivity {
                 trueButton.setEnabled(true);
                 View falseButton = findViewById(R.id.FalseButton);
                 falseButton.setEnabled(true);
-                View beforeButton = findViewById(R.id.Before);
-                beforeButton.setEnabled(true);
                 quest_count++;
                 if (quest_count == quest_limit) {
                     String answers_count = "Правильных ответов: " + tr_ans;
